@@ -1,0 +1,7 @@
+{
+  "ver": "1.0.0",
+  "uuid": "bc7d2866-3631-4d6d-9b2e-ead1a9afcbc0",
+  "atlasJson": "{\"width\":64,\"SubTexture\":[{\"frameX\":-1,\"y\":1,\"frameY\":0,\"frameWidth\":58,\"width\":56,\"frameHeight\":59,\"height\":58,\"name\":\"eff_qipao_01\",\"x\":1}],\"height\":64,\"name\":\"kyby_eff_bubble\",\"imagePath\":\"kyby_eff_bubble_tex.png\"}",
+  "texture": "1b362408-8afb-4c5b-b207-732044db0fc3",
+  "subMetas": {}
+}

@@ -1,0 +1,7 @@
+{
+  "ver": "1.0.0",
+  "uuid": "31f202a5-6b47-4a3a-ac68-72b65b2f9f65",
+  "atlasJson": "{\"SubTexture\":[{\"width\":617,\"y\":1,\"height\":579,\"name\":\"guang\",\"x\":1},{\"width\":560,\"y\":582,\"height\":340,\"name\":\"jinbi\",\"x\":1},{\"width\":255,\"y\":582,\"height\":270,\"name\":\"bg\",\"x\":563},{\"width\":91,\"y\":854,\"height\":130,\"name\":\"haicao\",\"x\":563}],\"width\":1024,\"imagePath\":\"kyby_effect_zhuanpan2_tex.png\",\"height\":1024,\"name\":\"kyby_effect_zhuanpan2\"}",
+  "texture": "6c0634d3-fc50-422e-ba6f-a8dfd7cf22e1",
+  "subMetas": {}
+}

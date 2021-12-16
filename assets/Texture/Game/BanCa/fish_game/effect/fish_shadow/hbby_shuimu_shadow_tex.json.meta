@@ -1,0 +1,7 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e316801f-5af6-47cd-a4a4-597c06756442",
+  "atlasJson": "{\"width\":512,\"imagePath\":\"hbby_shuimu_shadow_tex.png\",\"SubTexture\":[{\"frameWidth\":94,\"y\":107,\"frameX\":-2,\"frameHeight\":108,\"frameY\":-1,\"width\":92,\"height\":107,\"name\":\"fish12_02\",\"x\":1},{\"width\":70,\"y\":107,\"height\":118,\"name\":\"fish12_05\",\"x\":95},{\"frameWidth\":64,\"y\":1,\"frameX\":0,\"frameHeight\":108,\"frameY\":-1,\"width\":64,\"height\":107,\"name\":\"fish12_01\",\"x\":233},{\"width\":96,\"y\":1,\"height\":104,\"name\":\"fish12_03\",\"x\":1},{\"frameWidth\":64,\"y\":107,\"frameX\":0,\"frameHeight\":116,\"frameY\":-1,\"width\":64,\"height\":115,\"name\":\"fish12_06\",\"x\":167},{\"width\":72,\"y\":1,\"height\":104,\"name\":\"fish12_04\",\"x\":99}],\"height\":256,\"name\":\"hbby_shuimu_shadow\"}",
+  "texture": "d87e63d5-44c8-4672-bf93-9609f60f5a84",
+  "subMetas": {}
+}

@@ -1,0 +1,7 @@
+{
+  "ver": "1.0.0",
+  "uuid": "a072e0c3-28cd-4f3b-8788-11e330387833",
+  "atlasJson": "{\"width\":256,\"SubTexture\":[{\"width\":88,\"y\":113,\"height\":88,\"name\":\"kyby_zhujiemian_pic_iconkuang4\",\"x\":1},{\"width\":88,\"y\":113,\"height\":88,\"name\":\"kyby_zhujiemian_pic_iconkuang3\",\"x\":91},{\"frameY\":0,\"y\":1,\"frameWidth\":88,\"frameHeight\":88,\"width\":84,\"height\":84,\"name\":\"quan1\",\"frameX\":0,\"x\":113},{\"frameY\":0,\"y\":1,\"frameWidth\":114,\"frameHeight\":114,\"width\":110,\"height\":110,\"name\":\"quan2\",\"frameX\":0,\"x\":1}],\"height\":256,\"name\":\"kyby_jihuo\",\"imagePath\":\"kyby_jihuo_tex.png\"}",
+  "texture": "9b21d5f2-27b7-4a9d-93c0-8b17d095e970",
+  "subMetas": {}
+}
