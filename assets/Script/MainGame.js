@@ -3,7 +3,7 @@ var helper = require('Helper');
 var baseControll = require('BaseControll');
 var header       = require('Header'),
 	dialog       = require('Dialog'),
-	ThongBaoNoHu = require('PushNohu'),
+	//ThongBaoNoHu = require('PushNohu'),
 	newsContents = require('NewsContents'),
 	bgLoading    = require('bgLoading'),
 	MenuRoom     = require('MenuRoom'),
@@ -33,7 +33,7 @@ cc.Class({
 		//iconLongLanTemp: cc.Node,
 		iconZeus: 	  cc.Node,
 		//iconZeusTemp: 	  cc.Node,
-		iconMegaJ:    cc.Node,
+		//iconMegaJ:    cc.Node,
 		redhat:       cc.Node,
 		dialog:       dialog,
 		loading:      cc.Node,
@@ -43,8 +43,8 @@ cc.Class({
 			type: cc.Asset,
 			default: null
 		},
-		url:          '',
-		fileAPK:      '',
+	//	url:          '',
+	//	fileAPK:      '',
 		dataOn: true,
 		newsOn: true,
 		iconTxtTai:cc.Label,
@@ -75,7 +75,7 @@ cc.Class({
 		this.iconVQRed     = this.iconVQRed.getComponent('iconGameHu');
 		this.iconLongLan   = this.iconLongLan.getComponent('iconGameHu');
 		this.iconZeus 	   = this.iconZeus.getComponent('iconGameHu');
-		this.iconMegaJ     = this.iconMegaJ.getComponent('iconGameHu');
+		//this.iconMegaJ     = this.iconMegaJ.getComponent('iconGameHu');
 		//this.iconCandyTemp = this.iconCandyTemp.getComponent('iconGameHu');
 		//this.iconVQRedTemp = this.iconVQRedTemp.getComponent('iconGameHu');
 		//this.iconLongLanTemp = this.iconLongLanTemp.getComponent('iconGameHu');
@@ -238,9 +238,9 @@ cc.Class({
 			if (void 0 !== data.captcha) {
 				this.captcha(data.captcha);
 			}
-			if (void 0 !== data.pushnohu) {
-				this.ThongBaoNoHu.onData(data.pushnohu);
-			}
+		//	if (void 0 !== data.pushnohu) {
+		//		this.ThongBaoNoHu.onData(data.pushnohu);
+		//	}
 			if (void 0 !== data.loading) {
 				this.bgLoading.onData(data.loading);
 			}

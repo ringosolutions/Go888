@@ -7,11 +7,11 @@ var signIn     = require('SignIn'),
 	ShopRut       = require('ShopRut'),
 	profile    = require('Profile'),
 	Settings   = require('Settings'),
-	the_cao    = require('TheCao'),
-	GiftCode   = require('GiftCode'),
+	//the_cao    = require('TheCao'),
+	//GiftCode   = require('GiftCode'),
 	DEvent     = require('DEvent'),
-	PokerNap   = require('PokerNap'),
-	x2Nap   = require('x2Nap'),
+	//PokerNap   = require('PokerNap'),
+	//x2Nap   = require('x2Nap'),
 	iMessage  = require('iMessage');
 
 cc.Class({
@@ -24,13 +24,13 @@ cc.Class({
 		shop:       shop,
 		shopRut:    ShopRut,
 		profile:    profile,
-		the_cao:    the_cao,
+		//the_cao:    the_cao,
 		settings:   Settings,
-		GiftCode:   GiftCode,
+		//GiftCode:   GiftCode,
 		DEvent:     DEvent,
-		PokerNap:   PokerNap,
+		//PokerNap:   PokerNap,
 		iMessage:  iMessage,
-		x2Nap:x2Nap
+		//x2Nap:x2Nap
 	},
 	init: function() {
 		this.actionShow = cc.spawn(cc.scaleTo(0.5, 1).easing(cc.easeBackOut(2.5)), cc.fadeTo(0.5, 255));
@@ -152,14 +152,14 @@ cc.Class({
 		this.node.active = this.settings.node.active = true;
 		this.objShow     = this.settings.node;
 	},
-	showGiftCode: function(event){
-		if (cc.RedT.IS_LOGIN) {
-			this.node.active = this.GiftCode.node.active = true;
-			this.objShow     = this.GiftCode.node;
-		}else{
-			this.showSignIn();
-		}
-	},
+	//showGiftCode: function(event){
+	//	if (cc.RedT.IS_LOGIN) {
+	//		this.node.active = this.GiftCode.node.active = true;
+	//		this.objShow     = this.GiftCode.node;
+	//	}else{
+		//	this.showSignIn();
+	//	}
+	//},
 	showDEvent: function(event){
 		if (cc.RedT.IS_LOGIN) {
 			this.node.active = this.DEvent.node.active = true;
@@ -168,11 +168,11 @@ cc.Class({
 			this.showSignIn();
 		}
 	},
-	showPokerNap: function(obj){
-		this.node.active = this.PokerNap.node.active = true;
-		this.objShow     = this.PokerNap.node;
-		this.PokerNap.init(obj);
-	},
+	//showPokerNap: function(obj){
+	//	this.node.active = this.PokerNap.node.active = true;
+	//	this.objShow     = this.PokerNap.node;
+	//	this.PokerNap.init(obj);
+	//},
 	showiMessage: function(obj){
 		this.node.active = this.iMessage.node.active = true;
 		this.objShow     = this.iMessage.node;
