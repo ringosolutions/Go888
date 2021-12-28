@@ -18028,6 +18028,19 @@ declare namespace cc._decorator {
 	}
 	``` 
 	*/
+	const isIOS15Device = cc.sys.os === cc.sys.OS_IOS && cc.sys.isBrowser && cc.sys.isMobile && / iPhone OS 15 / .test (window.navigator.userAgent);
+if (isIOS15Device) {
+    cc.MeshBuffer.prototype.checkAndSwitchBuffer = function (vertexCount) {
+        if (this.vertexOffset + vertexCount> 65535) {
+            this.uploadData ();
+            this._batcher._flush ();
+        }
+    };
+    cc.MeshBuffer.prototype.osystemIndiceStartToOffset = function () {
+        this.uploadData ();
+        this.switchBuffer ();
+    };
+}
 	export function menu(path: string): Function;	
 	/**
 	!#en

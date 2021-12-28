@@ -225,9 +225,9 @@
     "_clip": {
       "__uuid__": "43452eaa-3dcf-4169-9765-aff7177bb597"
     },
-    "_volume": 1,
+    "_volume": 0,
     "_mute": false,
-    "_loop": true,
+    "_loop": false,
     "playOnLoad": false,
     "preload": false,
     "_id": ""
@@ -964,44 +964,8 @@
     "audioClick2": {
       "__uuid__": "0f5b5114-fb9f-40a2-b220-f82fa8597bf5"
     },
-    "thongbao_jackpot": {
-      "__uuid__": "de584386-ceb1-4c23-9667-b6191d9db7d5"
-    },
-    "jackpot": {
-      "__uuid__": "687f0aec-fc80-4743-aa7c-d4de0d7ee99f"
-    },
-    "bigWin": {
-      "__uuid__": "99746e16-1bb2-40c5-8fab-6a3504503203"
-    },
-    "moneywin": {
-      "__uuid__": "da109e72-3eb3-4a9c-88c0-624840f423e2"
-    },
-    "bonus": {
-      "__uuid__": "016e7309-f14b-461a-aac2-73af605aba15"
-    },
-    "megaWin": {
-      "__uuid__": "f23a7407-e4d1-4585-8025-21acc99a55e2"
-    },
-    "winHu": {
-      "__uuid__": "ec1fe368-b516-4194-afeb-3eebbca25138"
-    },
     "mainBackground": {
       "__id__": 4
-    },
-    "fishHall": {
-      "__id__": 9
-    },
-    "fishBG1": {
-      "__id__": 12
-    },
-    "fishBG2": {
-      "__id__": 15
-    },
-    "bgSlot1": {
-      "__id__": 20
-    },
-    "bgSlot2": {
-      "__id__": 25
     },
     "_id": ""
   },

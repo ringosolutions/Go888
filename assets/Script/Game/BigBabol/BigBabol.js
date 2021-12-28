@@ -90,7 +90,7 @@ cc.Class({
 		this.RedT.setTop(this.node);
 	},
 	openGame: function () {
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		if (cc.RedT.IS_LOGIN){
 			this.node.active = !0;
 			localStorage.setItem('big_babol', true);
@@ -100,7 +100,7 @@ cc.Class({
 			cc.RedT.inGame.dialog.showSignIn();
 	},
 	closeGame:function(){
-		cc.RedT.audio.playUnClick();
+	//	cc.RedT.audio.playUnClick();
 		this.node.active = !1;
 		localStorage.setItem('big_babol', false);
 	},
@@ -256,7 +256,7 @@ cc.Class({
 			var text = nohu.node.children[6].getComponent(cc.Label);
 			var Play = function(){
 				var huong = cc.callFunc(function(){
-					cc.RedT.audio.playEf('winHu');
+			//		cc.RedT.audio.playEf('winHu');
 					helper.numberTo(text, 0, this.win, 1000, true);
 				}, this);
 				nohu.node.runAction(cc.sequence(cc.delayTime(0.25), huong));

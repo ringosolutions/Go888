@@ -20,11 +20,11 @@ cc.Class({
         this.selectAll(null, "1");
     },
     onOpen: function(){
-        cc.RedT.audio.playClick();
+     //   cc.RedT.audio.playClick();
         this.node.active = true;
     },
     onClose: function(){
-        cc.RedT.audio.playUnClick();
+      //  cc.RedT.audio.playUnClick();
         if (this.node.active && this.data.length < 1) {
             this.RedT.notice.show({title:'CẢNH BÁO', text:'Chọn ít nhất 1 dòng'});
         }else{

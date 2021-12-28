@@ -82,7 +82,7 @@ cc.Class({
 		}
 	},
 	toggle: function(){
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		if (!this.toggleRuning){
 			this.toggleRuning = true;
 			this.list.stopAllActions();

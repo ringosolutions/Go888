@@ -96,7 +96,7 @@ cc.Class({
 		}
 	},
 	toggle: function(){
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		this.body.active = cc.RedT.setting.topHu.open = !this.body.active;
 		this.onChangerData();
 	},
@@ -161,7 +161,7 @@ cc.Class({
         this.RedT.BigBabol.onGetHu();
         this.RedT.CaoThap.onGetHu();
         this.RedT.AngryBirds.onGetHu();
-        this.RedT.MegaJackpot.onGetHu();
+      //  this.RedT.MegaJackpot.onGetHu();
         ///**
         if (void 0 !== cc.RedT.inGame.onGetHu) {
         	cc.RedT.inGame.onGetHu();

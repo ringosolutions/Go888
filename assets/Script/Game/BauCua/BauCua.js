@@ -111,7 +111,7 @@ cc.Class({
 		cc.RedT.setting.baucua.position = this.node.position;
 	},
     openGame:function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		if (cc.RedT.IS_LOGIN){
 			this.node.active = !0;
 			localStorage.setItem('bauCua', true);
@@ -121,7 +121,7 @@ cc.Class({
 			cc.RedT.inGame.dialog.showSignIn();
 	},
 	closeGame:function(){
-		cc.RedT.audio.playUnClick();
+	//	cc.RedT.audio.playUnClick();
 		this.node.active = !1;
 		localStorage.setItem('bauCua', false);
 	},

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "d1c08e9b-e6f5-4aa2-8889-5149eb6efc86",
+  "uuid": "3bfb0dac-d1fb-4a97-8c3a-3f2fae790fd1",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "banner_doidomainGo88FUN": {
       "ver": "1.0.4",
-      "uuid": "9e1d0fa2-753d-4f0a-9788-722831e6b6f1",
-      "rawTextureUuid": "d1c08e9b-e6f5-4aa2-8889-5149eb6efc86",
+      "uuid": "c8b3df02-e2a4-4672-9aec-00a4c1abb9f1",
+      "rawTextureUuid": "3bfb0dac-d1fb-4a97-8c3a-3f2fae790fd1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

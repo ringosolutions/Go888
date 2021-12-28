@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "0db53dfe-e817-47cb-ac3f-657955521064",
+  "uuid": "527972c4-2cbf-46c8-8129-0fde66710df8",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "baucua": {
       "ver": "1.0.4",
-      "uuid": "cff660e0-5ee0-4a42-b78b-8a2dc19e7c02",
-      "rawTextureUuid": "0db53dfe-e817-47cb-ac3f-657955521064",
+      "uuid": "16259949-f5ec-4c94-9bad-57e3865d9bc2",
+      "rawTextureUuid": "527972c4-2cbf-46c8-8129-0fde66710df8",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

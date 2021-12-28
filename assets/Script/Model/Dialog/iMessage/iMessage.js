@@ -52,7 +52,7 @@ cc.Class({
 	onContentClick: function(obj){
 		if (obj.message != this.message) {
 			obj.bg.active = false;
-			cc.RedT.audio.playClick();
+			//cc.RedT.audio.playClick();
 			this.message = obj.message;
 			this.getContent();
 

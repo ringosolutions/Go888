@@ -124,20 +124,20 @@ module.exports = {
 		var check = localStorage.getItem('AUTO_LOGIN');
 		return check == "true"
 	},
-	setSoundGame: function(bool){
-		localStorage.setItem('SOUND_GAME', bool)
-	},
-	isSoundGame: function(){
-		var check = localStorage.getItem('SOUND_GAME');
-		return check == "true"
-	},
-	setSoundBackground: function(bool){
-		localStorage.setItem('SOUND_BACKGROUND', bool)
-	},
-	isSoundBackground: function(){
-		var check = localStorage.getItem('SOUND_BACKGROUND');
-		return check == "true"
-	},
+	//setSoundGame: function(bool){
+	//	localStorage.setItem('SOUND_GAME', bool)
+	//},
+	//isSoundGame: function(){
+	//	var check = localStorage.getItem('SOUND_GAME');
+	//	return check == "true"
+	//},
+	//setSoundBackground: function(bool){
+	//	localStorage.setItem('SOUND_BACKGROUND', bool)
+	//},
+	//isSoundBackground: function(){
+	//	var check = localStorage.getItem('SOUND_BACKGROUND');
+	//	return check == "true"
+	//},
 	userData: function(data){
 		if (void 0 !== data.avatar){
 			this.user.avatar = data.avatar;

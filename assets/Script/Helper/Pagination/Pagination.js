@@ -177,26 +177,26 @@ cc.Class({
 
 	onClickFirst: function(){
 		this.controll.get_data();
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 	},
 	onClickPrevious: function(){
 		var page = this.objSelect.number.string-1;
 		page > 0 && this.controll.get_data(page);
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 	},
 	onClickPage: function(event){
 		this.controll.get_data(event.target.page);
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 	},
 	onClickNext: function(){
 		var page   = this.objSelect.number.string*1+1;
 		var totall = Math.ceil(this.totall/this.kmess);
 		page <= totall && this.controll.get_data(page);
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 	},
 	onClickLast: function(){
 		this.controll.get_data(Math.ceil(this.totall/this.kmess));
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 	},
 
 });

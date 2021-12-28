@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "7cbb1c08-01bc-45c9-b384-e31430ebadde",
+  "uuid": "67fe945c-8a7d-4f0e-83a3-7f70c269ceb9",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "thethao": {
       "ver": "1.0.4",
-      "uuid": "4b8ee663-aaa6-4c84-af08-1dd4ff0db919",
-      "rawTextureUuid": "7cbb1c08-01bc-45c9-b384-e31430ebadde",
+      "uuid": "1722765a-9b63-4010-a835-7c24e395507b",
+      "rawTextureUuid": "67fe945c-8a7d-4f0e-83a3-7f70c269ceb9",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

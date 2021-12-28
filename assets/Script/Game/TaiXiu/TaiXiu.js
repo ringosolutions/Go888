@@ -39,7 +39,7 @@ cc.Class({
 		this.RedT.setTop(this.node);
 	},
 	openGame: function (e, taixiu = '1') {
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		if (cc.RedT.IS_LOGIN){
 			this.node.active = !0;
 			localStorage.setItem('taixiu', true);
@@ -49,7 +49,7 @@ cc.Class({
 		}
 	},
 	closeGame: function () {
-		cc.RedT.audio.playUnClick();
+		//cc.RedT.audio.playUnClick();
 		this.node.active = this.TX_ThongKe.node.active = this.TX_Main.TX_Board.node.active = !1;
 		localStorage.setItem('taixiu', false);
 	},

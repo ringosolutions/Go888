@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "13225d6c-4017-4064-9a15-abbb9281b427",
+  "uuid": "18512635-c0e9-4ba4-b051-6e13657b68b0",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "bacarat": {
       "ver": "1.0.4",
-      "uuid": "9cc0d484-3c3a-4427-9992-461928f907e4",
-      "rawTextureUuid": "13225d6c-4017-4064-9a15-abbb9281b427",
+      "uuid": "ecc8cc79-8b17-48b4-af41-765155a3cfdf",
+      "rawTextureUuid": "18512635-c0e9-4ba4-b051-6e13657b68b0",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

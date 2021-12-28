@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "24a5aba2-9201-466f-a20f-2ad4b6c7a671",
+  "uuid": "730385e7-5298-4231-9ccf-b2617f62ca9b",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "bannertop": {
       "ver": "1.0.4",
-      "uuid": "22eb7e84-ad86-43ee-aa7b-bc494d66dfcf",
-      "rawTextureUuid": "24a5aba2-9201-466f-a20f-2ad4b6c7a671",
+      "uuid": "cb713ada-0dbe-42fb-88ea-e246eb1800ac",
+      "rawTextureUuid": "730385e7-5298-4231-9ccf-b2617f62ca9b",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

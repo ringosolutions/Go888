@@ -129,7 +129,7 @@ cc.Class({
 		});
 	},
 	onToggleClick: function() {
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		this.setTop();
 		this.node.active = cc.RedT.setting.taixiu.tk_active = !this.node.active;
 	},
@@ -170,25 +170,25 @@ cc.Class({
 		this.tong_dots[index].node.active  = bool;
 	},
 	showLineTong: function() {
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		this.tong_dot.active = !this.tong_dot.active;
 		this.tong_line.node.active = !this.tong_line.node.active;
 		this.line_dotT.active = !this.line_dotT.active;
 	},
 	showLineDice1: function() {
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		this.dice1_dot.active = !this.dice1_dot.active;
 		this.dice1_line.node.active = !this.dice1_line.node.active;
 		this.line_dot1.active = !this.line_dot1.active;
 	},
 	showLineDice2: function() {
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		this.dice2_dot.active = !this.dice2_dot.active;
 		this.dice2_line.node.active = !this.dice2_line.node.active;
 		this.line_dot2.active = !this.line_dot2.active;
 	},
 	showLineDice3: function() {
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		this.dice3_dot.active = !this.dice3_dot.active;
 		this.dice3_line.node.active = !this.dice3_line.node.active;
 		this.line_dot3.active = !this.line_dot3.active;

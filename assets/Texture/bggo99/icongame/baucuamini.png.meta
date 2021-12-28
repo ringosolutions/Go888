@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "c039fbae-105e-4693-a476-653ff2bc529d",
+  "uuid": "3361bec5-7ef0-4a60-a727-bea67315272c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "baucuamini": {
       "ver": "1.0.4",
-      "uuid": "1914dcc0-3810-45d6-a2f0-67ee225832ec",
-      "rawTextureUuid": "c039fbae-105e-4693-a476-653ff2bc529d",
+      "uuid": "1330fdb4-98da-4ed9-8364-bcef75d80031",
+      "rawTextureUuid": "3361bec5-7ef0-4a60-a727-bea67315272c",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

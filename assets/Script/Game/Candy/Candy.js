@@ -100,7 +100,7 @@ cc.Class({
 	},
 	BigWinPlay: function(){
 		var huong = cc.callFunc(function(){
-			cc.RedT.audio.playEf('megaWin');
+		//	cc.RedT.audio.playEf('megaWin');
 			helper.numberTo(this.BigWin_Label, 0, this.H_win, 2000, true);
 		}, this);
 		this.BigWin.node.runAction(cc.sequence(cc.delayTime(0.3), huong));
@@ -115,7 +115,7 @@ cc.Class({
 	NoHuPlay: function(){
 		this.NoHu_Label.string = "";
 		var huong = cc.callFunc(function(){
-			cc.RedT.audio.playEf('jackpot');
+		//	cc.RedT.audio.playEf('jackpot');
 			helper.numberTo(this.NoHu_Label, 0, this.H_win, 2000, true);
 		}, this);
 		this.NoHu.node.runAction(cc.sequence(cc.delayTime(0.3), huong));
@@ -267,7 +267,7 @@ cc.Class({
 			// Bonus
 			this.EF_Bonus.node.active = true;
 			this.EF_Bonus.play();
-			cc.RedT.audio.playEf('bonus');
+		//	cc.RedT.audio.playEf('bonus');
 		}else if (this.isFree){
 			// Free
 			this.EF_Free.node.active = true;
@@ -302,7 +302,7 @@ cc.Class({
 		}
 	},
 	onChangerBetR: function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		this.betSelect++;
 		if (this.betSelect>2) this.betSelect = 0;
 		this.bet.string  = this.betString[this.betSelect];
@@ -310,7 +310,7 @@ cc.Class({
 		this.onGetHu();
 	},
 	onChangerBetL: function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		this.betSelect--;
 		if (this.betSelect<0) this.betSelect = 2;
 		this.bet.string = this.betString[this.betSelect];
@@ -318,7 +318,7 @@ cc.Class({
 		this.onGetHu();
 	},
 	onClickAuto: function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		this.onAuto();
 	},
 	onAuto: function(){

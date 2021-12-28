@@ -33,15 +33,15 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 206,
+      "g": 203,
+      "b": 203,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 245.99,
-      "height": 16
+      "height": 28.57
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -97,15 +97,15 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 245,
-      "g": 255,
+      "r": 224,
+      "g": 126,
       "b": 0,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 0,
-      "height": 16
+      "height": 28.57
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -157,7 +157,7 @@
     "_useOriginalSize": false,
     "_string": "",
     "_N$string": "",
-    "_fontSize": 14,
+    "_fontSize": 25,
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -200,7 +200,7 @@
     "_useOriginalSize": false,
     "_string": "",
     "_N$string": "",
-    "_fontSize": 14,
+    "_fontSize": 25,
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {

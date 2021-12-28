@@ -20,7 +20,7 @@ cc.Class({
         fclick !== null && (this.local_click = fclick)
     },
     onClickChanger: function(){
-    	cc.RedT.audio.playClick();
+    //	cc.RedT.audio.playClick();
     	this.controll[this.local_text].string = this.text.string;
     	this.controll[this.local_arg].forEach(function(obj){
     		if (obj === this) {

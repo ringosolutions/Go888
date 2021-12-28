@@ -68,8 +68,8 @@ properties: {
 	taixiu: true,
 	btnLTxt: cc.Node,
 	btnRTxt: cc.Node,
-	audioWin:cc.AudioSource,
-	audioxuxxac:cc.AudioSource
+	//audioWin:cc.AudioSource,
+	//audioxuxxac:cc.AudioSource
 },
 DiaNan:function(){
 	this.dataLogs();
@@ -87,7 +87,7 @@ DiaNan:function(){
 	}
 
 	if(void 0 !== this._results.win && this._results.win){
-		this.audioWin.play();
+	//	this.audioWin.play();
 		if (this.isNan) {
 			this.status();
 		}
@@ -341,7 +341,7 @@ onData: function(data){
 		cc.RedT.setting.taixiu.logs   = data.logs;
 		this.dataLogs();
 		this.setPhien();
-		if(cc.RedT.setting.taixiu.time_remain > 50){//60
+		if(cc.RedT.setting.taixiu.time_remain > 60){//60
 			this.setDice(!0);
 			this.nodeTimeWait.active  = true;
 			this.timeCuoc.node.active = false;
@@ -375,7 +375,7 @@ onData: function(data){
 				this.diceAnimation.node.active = true;
 				if (this.node.activeInHierarchy) {
 					this.diceAnimation.play();
-					this.audioxuxxac.play();
+					//this.audioxuxxac.play();
 				}else{
 					this.onDiceAnimationFinish();
 				}
@@ -383,7 +383,7 @@ onData: function(data){
 			this.nodeTimeWait.active  = true;
 			this.timeCuoc.node.active = false;
 		}
-		cc.RedT.setting.taixiu.time_remain = 62;
+		cc.RedT.setting.taixiu.time_remain = 77;
 	//	cc.RedT.setting.taixiu.time_remain = 77;
 		//cc.RedT.setting.taixiu.time_remain = 82;
 		this.playTime();
@@ -400,7 +400,7 @@ efStop: function(){
 playTime: function(){
 	void 0 !== this.timeInterval && clearInterval(this.timeInterval);
 
-	this.audioWin.stop();
+	//this.audioWin.stop();
 	this._results = {};
 	
 	this.timeInterval = setInterval(function() {
@@ -409,24 +409,24 @@ playTime: function(){
 					
 					this.diceAnimation.node.active = true;
 					this.diceAnimation.play();
-					this.audioxuxxac.play();
+				//	this.audioxuxxac.play();
 					this.timeCuoc.node.active = false;
 			}else{
 				this.diceAnimation.node.active = false;
 				 }
 			}
-		if (cc.RedT.setting.taixiu.time_remain > 51) {//61
+		if (cc.RedT.setting.taixiu.time_remain > 61) {//61
 			if (this.bg_Dice._animator !== null && this.bg_Dice._animator.isPlaying) {
 				this.bg_Dice.stop();
 			}
 			this.bg_efDice.active = false;
-			var time = helper.numberPad(cc.RedT.setting.taixiu.time_remain-52, 2);//62
+			var time = helper.numberPad(cc.RedT.setting.taixiu.time_remain-62, 2);//62
 			this.timePopup.node.active && (this.timePopup.string = time) && (this.timePopup.node.color = cc.color(255, 0, 0, 255));
 			this.timeWait.string = '' + helper.numberPad(time, 2);
-			if (cc.RedT.setting.taixiu.time_remain < 55) {//71 51
+			if (cc.RedT.setting.taixiu.time_remain < 71) {//71 51
 				this.efStop();
 			}
-			if (cc.RedT.setting.taixiu.time_remain < 55) {//66 46 
+			if (cc.RedT.setting.taixiu.time_remain < 66) {//66 46 
 				this.nodeKetQua.active = false;
 				this.efTai.node.active = true;
 				this.efXiu.node.active = true;
@@ -441,11 +441,11 @@ playTime: function(){
 				this.bg_Dice._animator.playState(state);
 			}
 			if (this.bg_Dice._animator !== null && this.bg_Dice._animator.isPlaying) {
-				if (cc.RedT.setting.taixiu.time_remain < 17) {
+				if (cc.RedT.setting.taixiu.time_remain < 7) {
 					this.bg_Dice._animator._anims.array[0].speed = 10;
-				}else if (cc.RedT.setting.taixiu.time_remain < 33) {
+				}else if (cc.RedT.setting.taixiu.time_remain < 23) {
 					this.bg_Dice._animator._anims.array[0].speed = 6;
-				}else if (cc.RedT.setting.taixiu.time_remain < 43) {
+				}else if (cc.RedT.setting.taixiu.time_remain < 33) {
 					this.bg_Dice._animator._anims.array[0].speed = 3;
 				}
 			}
@@ -467,7 +467,7 @@ playTime: function(){
 				}
 				this.timePopup.node.active && (this.timePopup.string = time) && (this.timePopup.node.color = cc.color(155, 75, 2, 255))
 				if (cc.RedT.setting.taixiu.time_remain <= 10)
-					
+				
 					this.timeCuoc.node.color = cc.Color.WHITE
 			}else clearInterval(this.timeInterval);
 		}
@@ -477,11 +477,11 @@ playTime: function(){
 	.bind(this), 1000)
 },
 nextRealTime: function(){
-	if (cc.RedT.setting.taixiu.time_remain > 51) {//61
+	if (cc.RedT.setting.taixiu.time_remain > 61) {//61
 		this.setDice(true);
 		this.nodeTimeWait.active  = true;
 		this.timeCuoc.node.active = false;
-		var time = helper.numberPad(cc.RedT.setting.taixiu.time_remain-52, 2);//62 42
+		var time = helper.numberPad(cc.RedT.setting.taixiu.time_remain-62, 2);//62 42
 		this.timePopup.node.color = cc.color(255, 0, 0, 255);
 		this.timePopup.string     = time;
 		this.timeWait.string       = '' + helper.numberPad(time, 2);

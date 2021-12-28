@@ -105,7 +105,7 @@ cc.Class({
 		this.onGetHu();
 	},
 	openGame: function (game = null) {
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		if (cc.RedT.IS_LOGIN){
 			this.node.active = !0;
 			localStorage.setItem('MegaJackpot', true);

@@ -124,7 +124,7 @@ cc.Class({
 	},
 	toggle: function(){
 		this.RedT.setTop();
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		this.node.active = cc.RedT.setting.taixiu.chat_active = !this.node.active;
 	},
 	clean: function(){

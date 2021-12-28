@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "3e915e39-87c6-4840-87ce-8a220cfaf52e",
+  "uuid": "961caf2d-c86b-4f29-bfbe-3568baea8b0f",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "quest": {
       "ver": "1.0.4",
-      "uuid": "5cbe6866-babf-46c0-ac4b-81bef618efb5",
-      "rawTextureUuid": "3e915e39-87c6-4840-87ce-8a220cfaf52e",
+      "uuid": "e5acc9d6-53af-4c29-821d-12e87dcd283b",
+      "rawTextureUuid": "961caf2d-c86b-4f29-bfbe-3568baea8b0f",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

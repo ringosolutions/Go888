@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "404bd903-ebfc-4dd3-ba54-675b5a44dad6",
+  "uuid": "5e5dd7be-3461-4fa3-88d4-93270f84c6cb",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "sthethao": {
       "ver": "1.0.4",
-      "uuid": "f84a14b8-dc3b-44ae-ad80-ff5275d3f2f6",
-      "rawTextureUuid": "404bd903-ebfc-4dd3-ba54-675b5a44dad6",
+      "uuid": "47f25d0c-114c-4719-ae1c-73f67bf399d3",
+      "rawTextureUuid": "5e5dd7be-3461-4fa3-88d4-93270f84c6cb",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

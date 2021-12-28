@@ -96,7 +96,7 @@ cc.Class({
 			cc.RedT.inGame.dialog.showSignIn();
 	},
 	closeGame:function(){
-		cc.RedT.audio.playUnClick();
+	//	cc.RedT.audio.playUnClick();
 		this.node.active = !1;
 		localStorage.setItem('mini3cay', false);
 	},
@@ -133,7 +133,7 @@ cc.Class({
 		this.onGetHu();
 	},
 	playClick: function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 	},
 	onClickSpeed: function(){
 		this.isSpeed               = cc.RedT.setting.mini3cay.isSpeed = !this.isSpeed;
@@ -244,7 +244,7 @@ cc.Class({
 
 				var Play = function(){
 					var huong = cc.callFunc(function(){
-						cc.RedT.audio.playEf('winHu');
+					//	cc.RedT.audio.playEf('winHu');
 						helper.numberTo(text, 0, this.win, 1000, true);
 						this.win = 0;
 					}, this);

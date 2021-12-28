@@ -20,7 +20,7 @@ cc.Class({
     },
     onClickBox: function(e, box) {
     	if (!!this.numberBonus.string) {
-    	   cc.RedT.audio.playClick();
+    	 //  cc.RedT.audio.playClick();
     		this.onSend(box);
     	}
     },

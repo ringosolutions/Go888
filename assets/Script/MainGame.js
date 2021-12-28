@@ -6,13 +6,13 @@ var header       = require('Header'),
 	//ThongBaoNoHu = require('PushNohu'),
 	newsContents = require('NewsContents'),
 	bgLoading    = require('bgLoading'),
-	MenuRoom     = require('MenuRoom'),
+	//MenuRoom     = require('MenuRoom'),
 	notice       = require('Notice');
 
 cc.Class({
 	extends: cc.Component,
 	properties: {
-		MenuRoom: MenuRoom,
+		//MenuRoom: MenuRoom,
 		avatars: {
 			default: [],
 			type: cc.SpriteFrame
@@ -27,7 +27,7 @@ cc.Class({
 		bgLoading:    bgLoading,
 		iconVQRed:    cc.Node,
 		//iconVQRedTemp: cc.Node,
-		iconCandy:    cc.Node,
+		//iconCandy:    cc.Node,
 		//iconCandyTemp: cc.Node,
 		iconLongLan:  cc.Node,
 		//iconLongLanTemp: cc.Node,
@@ -38,13 +38,12 @@ cc.Class({
 		dialog:       dialog,
 		loading:      cc.Node,
 		notice:       notice,
-		ThongBaoNoHu: ThongBaoNoHu,
+		//ThongBaoNoHu: ThongBaoNoHu,
 		wssCacert: {
 			type: cc.Asset,
 			default: null
 		},
-	//	url:          '',
-	//	fileAPK:      '',
+	
 		dataOn: true,
 		newsOn: true,
 		iconTxtTai:cc.Label,
@@ -58,23 +57,23 @@ cc.Class({
 			cc.RedT.sslPem = this.wssCacert;
 			cc.RedT.init();
 			cc.RedT.inGame = this;
-			cc.RedT.audio    = this.PrefabT[0].data.getComponent('MainAudio');
-			cc.RedT.audio.bg = cc.RedT.audio.mainBackground;
+			//cc.RedT.audio    = this.PrefabT[0].data.getComponent('MainAudio');
+			//cc.RedT.audio.bg = cc.RedT.audio.mainBackground;
 			cc.RedT.avatars  = this.avatars;
-			cc.RedT.MiniPanel = cc.instantiate(this.PrefabT[1]);
+			cc.RedT.MiniPanel = cc.instantiate(this.PrefabT[0]);
 			cc.RedT.MiniPanel = cc.RedT.MiniPanel.getComponent('MiniPanel');
 		}else{
 			cc.RedT.inGame = this;
-			cc.RedT.audio.bg.pause();
+		//	cc.RedT.audio.bg.pause();
 			 
-			cc.RedT.audio.bg = cc.RedT.audio.mainBackground;
+			//cc.RedT.audio.bg = cc.RedT.audio.mainBackground;
 		}
 		cc.RedT.MiniPanel.node.parent = this.redhat;
 		cc.RedT.reconnect();
-		this.iconCandy     = this.iconCandy.getComponent('iconGameHu');
-		this.iconVQRed     = this.iconVQRed.getComponent('iconGameHu');
-		this.iconLongLan   = this.iconLongLan.getComponent('iconGameHu');
-		this.iconZeus 	   = this.iconZeus.getComponent('iconGameHu');
+	//	this.iconCandy     = this.iconCandy.getComponent('iconGameHu');
+		// this.iconVQRed     = this.iconVQRed.getComponent('iconGameHu');
+		// this.iconLongLan   = this.iconLongLan.getComponent('iconGameHu');
+		// this.iconZeus 	   = this.iconZeus.getComponent('iconGameHu');
 		//this.iconMegaJ     = this.iconMegaJ.getComponent('iconGameHu');
 		//this.iconCandyTemp = this.iconCandyTemp.getComponent('iconGameHu');
 		//this.iconVQRedTemp = this.iconVQRedTemp.getComponent('iconGameHu');
@@ -104,24 +103,25 @@ cc.Class({
 				this.dialog.profile.CaNhan.phoneStatus.string = '';
 			}
 			this.setAvatar(cc.RedT.user.avatar);
-		}else{
-			this.dialog.settings.setMusic();
-		}
+		 }
+		//else{
+		// 	this.dialog.settings.setMusic();
+		// }
 
-		var check = localStorage.getItem('SOUND_BACKGROUND');
-		if(check == null || cc.RedT.isSoundBackground()){
-			cc.RedT.setSoundBackground(true);
+		//var check = localStorage.getItem('SOUND_BACKGROUND');
+		//if(check == null || cc.RedT.isSoundBackground()){
+		//	cc.RedT.setSoundBackground(false);
 			
 		//	cc.RedT.audio.current = cc.audioEngine.play(cc.RedT.audio.bg.clip, true, 1);
-			cc.RedT.audio.bg.play();
-			let t = setInterval(function(){
-				console.log(cc.RedT.audio.bg.clip.loaded);
-				if(cc.RedT.audio.bg.clip.loaded){
-					clearInterval(t);
-					cc.RedT.audio.bg.play();
-				}	
-			}.bind(this),100);
-		}
+			//cc.RedT.audio.bg.play();
+			//let t = setInterval(function(){
+			//	console.log(cc.RedT.audio.bg.clip.loaded);
+			//	if(cc.RedT.audio.bg.clip.loaded){
+			//		clearInterval(t);
+			//		cc.RedT.audio.bg.play();
+			//	}	
+		//	}.bind(this),100);
+	//	}
 
 		if (cc.sys.isBrowser) {
 			history.pushState(null, null, location.href);
@@ -206,13 +206,13 @@ cc.Class({
 				cc.RedT.userData(data.user);
 				this.dataUser(data.user);
 			}
-			if (void 0 !== data.mini){
-				cc.RedT.MiniPanel.onData(data.mini);
-			}
-			if (void 0 !== data.TopHu){
-				cc.RedT.MiniPanel.TopHu.onData(data.TopHu);
-				this.dialog.DEvent.onHU(data.TopHu);
-			}
+			// if (void 0 !== data.mini){
+			// 	cc.RedT.MiniPanel.onData(data.mini);
+			// }
+			//if (void 0 !== data.TopHu){
+			//	cc.RedT.MiniPanel.TopHu.onData(data.TopHu);
+				//this.dialog.DEvent.onHU(data.TopHu);
+		//	}
 			if (void 0 !== data.taixiu){
 			 
 				if(this.iconTxtTai && data.taixiu.hasOwnProperty("taixiu") && data.taixiu.taixiu.red_tai){
@@ -238,8 +238,8 @@ cc.Class({
 			if (void 0 !== data.captcha) {
 				this.captcha(data.captcha);
 			}
-		//	if (void 0 !== data.pushnohu) {
-		//		this.ThongBaoNoHu.onData(data.pushnohu);
+			//if (void 0 !== data.pushnohu) {
+			//	this.ThongBaoNoHu.onData(data.pushnohu);
 		//	}
 			if (void 0 !== data.loading) {
 				this.bgLoading.onData(data.loading);
@@ -250,9 +250,9 @@ cc.Class({
 			if (void 0 !== data.vipp) {
 				cc.RedT.MiniPanel.Dialog.VipPoint.onData(data.vipp);
 			}
-			if (!!data.toGame) {
-				this.MenuRoom.onData(data.toGame);
-			}
+			//if (!!data.toGame) {
+			//	this.MenuRoom.onData(data.toGame);
+		//	}
 			if (!!data.message) {
 				this.dialog.iMessage.onData(data.message);
 			}
@@ -352,7 +352,7 @@ cc.Class({
 
 	
 		this.dialog.onBack();
-	 	this.dialog.showEventX2();
+	 	//this.dialog.showEventX2();
 		 
 		cc.RedT.MiniPanel.signIn();
 	},
@@ -371,133 +371,133 @@ cc.Class({
 		noticeComponent.text.string = 'Đã copy nội dung được chọn';
 		this.node.addChild(notice);
 	},
-	audioClick: function(){
-		cc.RedT.audio.playClick();
-	},
-	audioUnClick: function(){
-		cc.RedT.audio.playUnClick();
-	},
+	// audioClick: function(){
+	// 	cc.RedT.audio.playClick();
+	// },
+	// audioUnClick: function(){
+	// 	cc.RedT.audio.playUnClick();
+	// },
 	fanpage: function(){
 		cc.sys.openURL('https://www.facebook.com/H%E1%BB%97-Tr%E1%BB%A3-Go88-Game-%C4%90%E1%BA%B3ng-C%E1%BA%A5p-105554448477834');
 	},
-	ios: function(){
-		cc.sys.openURL(this.url + 'https://t.me/go88game_bot');
-	},
-	android: function(){
-		cc.sys.openURL(this.url + '/download/android/' + this.fileAPK);
-	},
+//	ios: function(){
+//		cc.sys.openURL(this.url + 'https://t.me/go88game_bot');
+//	},
+//	android: function(){
+//		cc.sys.openURL(this.url + '/download/android/' + this.fileAPK);
+//	},
 	telegram: function(){
 		cc.sys.openURL('https://t.me/HoTroGameCasino1');
 	},
-	onGetHu: function () {
-		if (void 0 !== cc.RedT.setting.topHu.data) {
-			var self = this;
-			// Vương Quốc Red
-			Promise.all(cc.RedT.setting.topHu.data['vq_red'].filter(function (temp) {
-				return temp.red == true;
-			}))
-				.then(result => {
-					let h100 = result.filter(function (temp) { return temp.type == 100 });
-					let h1k = result.filter(function (temp) { return temp.type == 1000 });
-					let h10k = result.filter(function (temp) { return temp.type == 10000 });
+	// onGetHu: function () {
+	// 	if (void 0 !== cc.RedT.setting.topHu.data) {
+	// 		var self = this;
+	// 		// Vương Quốc Red
+	// 		Promise.all(cc.RedT.setting.topHu.data['vq_red'].filter(function (temp) {
+	// 			return temp.red == true;
+	// 		}))
+	// 			.then(result => {
+	// 				let h100 = result.filter(function (temp) { return temp.type == 100 });
+	// 				let h1k = result.filter(function (temp) { return temp.type == 1000 });
+	// 				let h10k = result.filter(function (temp) { return temp.type == 10000 });
 
-					let r100 = helper.getOnlyNumberInString(this.iconVQRed.hu100.string);
-					let r1k = helper.getOnlyNumberInString(this.iconVQRed.hu1k.string);
-					let r10k = helper.getOnlyNumberInString(this.iconVQRed.hu10k.string);
+	// 				let r100 = helper.getOnlyNumberInString(this.iconVQRed.hu100.string);
+	// 				let r1k = helper.getOnlyNumberInString(this.iconVQRed.hu1k.string);
+	// 				let r10k = helper.getOnlyNumberInString(this.iconVQRed.hu10k.string);
 
-					if (r100 - h100[0].bet != 0) {
-						helper.numberTo(this.iconVQRed.hu100, helper.getOnlyNumberInString(this.iconVQRed.hu100.string), h100[0].bet, 4900, true);
-						//helper.numberTo(this.iconVQRedTemp.hu100, helper.getOnlyNumberInString(this.iconVQRedTemp.hu100.string), h100[0].bet, 4900, true);
+	// 				if (r100 - h100[0].bet != 0) {
+	// 					helper.numberTo(this.iconVQRed.hu100, helper.getOnlyNumberInString(this.iconVQRed.hu100.string), h100[0].bet, 4900, true);
+	// 				//	helper.numberTo(this.iconVQRedTemp.hu100, helper.getOnlyNumberInString(this.iconVQRedTemp.hu100.string), h100[0].bet, 4900, true);
 
-					}
-					if (r1k - h1k[0].bet != 0) {
-						helper.numberTo(this.iconVQRed.hu1k, helper.getOnlyNumberInString(this.iconVQRed.hu1k.string), h1k[0].bet, 4900, true);
-						//helper.numberTo(this.iconVQRedTemp.hu1k, helper.getOnlyNumberInString(this.iconVQRedTemp.hu1k.string), h1k[0].bet, 4900, true);
-					}
-					if (r10k - h10k[0].bet != 0) {
-						helper.numberTo(this.iconVQRed.hu10k, helper.getOnlyNumberInString(this.iconVQRed.hu10k.string), h10k[0].bet, 4900, true);
-						//helper.numberTo(this.iconVQRedTemp.hu10k, helper.getOnlyNumberInString(this.iconVQRedTemp.hu10k.string), h10k[0].bet, 4900, true);
-					}
-				});
+	// 				}
+	// 				if (r1k - h1k[0].bet != 0) {
+	// 					helper.numberTo(this.iconVQRed.hu1k, helper.getOnlyNumberInString(this.iconVQRed.hu1k.string), h1k[0].bet, 4900, true);
+	// 				//	helper.numberTo(this.iconVQRedTemp.hu1k, helper.getOnlyNumberInString(this.iconVQRedTemp.hu1k.string), h1k[0].bet, 4900, true);
+	// 				}
+	// 				if (r10k - h10k[0].bet != 0) {
+	// 					helper.numberTo(this.iconVQRed.hu10k, helper.getOnlyNumberInString(this.iconVQRed.hu10k.string), h10k[0].bet, 4900, true);
+	// 				//	helper.numberTo(this.iconVQRedTemp.hu10k, helper.getOnlyNumberInString(this.iconVQRedTemp.hu10k.string), h10k[0].bet, 4900, true);
+	// 				}
+	// 			});
 
 			// Candy
-			Promise.all(cc.RedT.setting.topHu.data['candy'].filter(function (temp) {
-				return temp.red == true;
-			}))
-				.then(result => {
-					let h100 = result.filter(function (temp) { return temp.type == 100 });
-					let h1k = result.filter(function (temp) { return temp.type == 1000 });
-					let h10k = result.filter(function (temp) { return temp.type == 10000 });
+		//	Promise.all(cc.RedT.setting.topHu.data['candy'].filter(function (temp) {
+		//		return temp.red == true;
+		//	}))
+		//		.then(result => {
+		//			let h100 = result.filter(function (temp) { return temp.type == 100 });
+		//			let h1k = result.filter(function (temp) { return temp.type == 1000 });
+		//			let h10k = result.filter(function (temp) { return temp.type == 10000 });
+//
+	//				let r100 = helper.getOnlyNumberInString(this.iconCandy.hu100.string);
+	//				let r1k = helper.getOnlyNumberInString(this.iconCandy.hu1k.string);
+	//				let r10k = helper.getOnlyNumberInString(this.iconCandy.hu10k.string);
 
-					let r100 = helper.getOnlyNumberInString(this.iconCandy.hu100.string);
-					let r1k = helper.getOnlyNumberInString(this.iconCandy.hu1k.string);
-					let r10k = helper.getOnlyNumberInString(this.iconCandy.hu10k.string);
-
-					if (r100 - h100[0].bet != 0) {
-						helper.numberTo(this.iconCandy.hu100, helper.getOnlyNumberInString(this.iconCandy.hu100.string), h100[0].bet, 4900, true);
+	//				if (r100 - h100[0].bet != 0) {
+	//					helper.numberTo(this.iconCandy.hu100, helper.getOnlyNumberInString(this.iconCandy.hu100.string), h100[0].bet, 4900, true);
 						//helper.numberTo(this.iconCandyTemp.hu100, helper.getOnlyNumberInString(this.iconCandyTemp.hu100.string), h100[0].bet, 4900, true);
-					}
-					if (r1k - h1k[0].bet != 0) {
-						helper.numberTo(this.iconCandy.hu1k, helper.getOnlyNumberInString(this.iconCandy.hu1k.string), h1k[0].bet, 4900, true);
-						//helper.numberTo(this.iconCandyTemp.hu1k, helper.getOnlyNumberInString(this.iconCandyTemp.hu1k.string), h1k[0].bet, 4900, true);
-					}
-					if (r10k - h10k[0].bet != 0) {
-						helper.numberTo(this.iconCandy.hu10k, helper.getOnlyNumberInString(this.iconCandy.hu10k.string), h10k[0].bet, 4900, true);
-						//helper.numberTo(this.iconCandyTemp.hu10k, helper.getOnlyNumberInString(this.iconCandyTemp.hu10k.string), h10k[0].bet, 4900, true);
-					}
-				});
+	//				}
+	//				if (r1k - h1k[0].bet != 0) {
+	//					helper.numberTo(this.iconCandy.hu1k, helper.getOnlyNumberInString(this.iconCandy.hu1k.string), h1k[0].bet, 4900, true);
+					//	helper.numberTo(this.iconCandyTemp.hu1k, helper.getOnlyNumberInString(this.iconCandyTemp.hu1k.string), h1k[0].bet, 4900, true);
+	//				}
+	//				if (r10k - h10k[0].bet != 0) {
+	//					helper.numberTo(this.iconCandy.hu10k, helper.getOnlyNumberInString(this.iconCandy.hu10k.string), h10k[0].bet, 4900, true);
+					//	helper.numberTo(this.iconCandyTemp.hu10k, helper.getOnlyNumberInString(this.iconCandyTemp.hu10k.string), h10k[0].bet, 4900, true);
+	//				}
+	//			});
 			//Zeus
-			Promise.all(cc.RedT.setting.topHu.data['zeus'].filter(function (temp) {
-				return temp.red == true;
-			}))
-				.then(result => {
-					let h100 = result.filter(function (temp) { return temp.type == 100 });
-					let h1k = result.filter(function (temp) { return temp.type == 1000 });
-					let h10k = result.filter(function (temp) { return temp.type == 10000 });
+			// Promise.all(cc.RedT.setting.topHu.data['zeus'].filter(function (temp) {
+			// 	return temp.red == true;
+			// }))
+			// 	.then(result => {
+			// 		let h100 = result.filter(function (temp) { return temp.type == 100 });
+			// 		let h1k = result.filter(function (temp) { return temp.type == 1000 });
+			// 		let h10k = result.filter(function (temp) { return temp.type == 10000 });
 
-					let r100 = helper.getOnlyNumberInString(this.iconZeus.hu100.string);
-					let r1k = helper.getOnlyNumberInString(this.iconZeus.hu1k.string);
-					let r10k = helper.getOnlyNumberInString(this.iconZeus.hu10k.string);
+			// 		let r100 = helper.getOnlyNumberInString(this.iconZeus.hu100.string);
+			// 		let r1k = helper.getOnlyNumberInString(this.iconZeus.hu1k.string);
+			// 		let r10k = helper.getOnlyNumberInString(this.iconZeus.hu10k.string);
 
-					if (r100 - h100[0].bet != 0) {
-						helper.numberTo(this.iconZeus.hu100, helper.getOnlyNumberInString(this.iconZeus.hu100.string), h100[0].bet, 4900, true);
-						//helper.numberTo(this.iconZeusTemp.hu100, helper.getOnlyNumberInString(this.iconZeusTemp.hu100.string), h100[0].bet, 4900, true);
-					}
-					if (r1k - h1k[0].bet != 0) {
-						helper.numberTo(this.iconZeus.hu1k, helper.getOnlyNumberInString(this.iconZeus.hu1k.string), h1k[0].bet, 4900, true);
-						//helper.numberTo(this.iconZeusTemp.hu1k, helper.getOnlyNumberInString(this.iconZeusTemp.hu1k.string), h1k[0].bet, 4900, true);
-					}
-					if (r10k - h10k[0].bet != 0) {
-						helper.numberTo(this.iconZeus.hu10k, helper.getOnlyNumberInString(this.iconZeus.hu10k.string), h10k[0].bet, 4900, true);
-						//helper.numberTo(this.iconZeusTemp.hu10k, helper.getOnlyNumberInString(this.iconZeusTemp.hu10k.string), h10k[0].bet, 4900, true);
-					}
-				});
+			// 		if (r100 - h100[0].bet != 0) {
+			// 			helper.numberTo(this.iconZeus.hu100, helper.getOnlyNumberInString(this.iconZeus.hu100.string), h100[0].bet, 4900, true);
+			// 		//	helper.numberTo(this.iconZeusTemp.hu100, helper.getOnlyNumberInString(this.iconZeusTemp.hu100.string), h100[0].bet, 4900, true);
+			// 		}
+			// 		if (r1k - h1k[0].bet != 0) {
+			// 			helper.numberTo(this.iconZeus.hu1k, helper.getOnlyNumberInString(this.iconZeus.hu1k.string), h1k[0].bet, 4900, true);
+			// 		//	helper.numberTo(this.iconZeusTemp.hu1k, helper.getOnlyNumberInString(this.iconZeusTemp.hu1k.string), h1k[0].bet, 4900, true);
+			// 		}
+			// 		if (r10k - h10k[0].bet != 0) {
+			// 			helper.numberTo(this.iconZeus.hu10k, helper.getOnlyNumberInString(this.iconZeus.hu10k.string), h10k[0].bet, 4900, true);
+			// 		//	helper.numberTo(this.iconZeusTemp.hu10k, helper.getOnlyNumberInString(this.iconZeusTemp.hu10k.string), h10k[0].bet, 4900, true);
+			// 		}
+			// 	});
 			// Long Lan
-			Promise.all(cc.RedT.setting.topHu.data['long'].filter(function (temp) {
-				return temp.red == true;
-			}))
-				.then(result => {
-					let h100 = result.filter(function (temp) { return temp.type == 100 });
-					let h1k = result.filter(function (temp) { return temp.type == 1000 });
-					let h10k = result.filter(function (temp) { return temp.type == 10000 });
+			// Promise.all(cc.RedT.setting.topHu.data['long'].filter(function (temp) {
+			// 	return temp.red == true;
+			// }))
+			// 	.then(result => {
+			// 		let h100 = result.filter(function (temp) { return temp.type == 100 });
+			// 		let h1k = result.filter(function (temp) { return temp.type == 1000 });
+			// 		let h10k = result.filter(function (temp) { return temp.type == 10000 });
 
-					let r100 = helper.getOnlyNumberInString(this.iconLongLan.hu100.string);
-					let r1k = helper.getOnlyNumberInString(this.iconLongLan.hu1k.string);
-					let r10k = helper.getOnlyNumberInString(this.iconLongLan.hu10k.string);
+			// 		let r100 = helper.getOnlyNumberInString(this.iconLongLan.hu100.string);
+			// 		let r1k = helper.getOnlyNumberInString(this.iconLongLan.hu1k.string);
+			// 		let r10k = helper.getOnlyNumberInString(this.iconLongLan.hu10k.string);
 
-					if (r100 - h100[0].bet != 0) {
-						helper.numberTo(this.iconLongLan.hu100, helper.getOnlyNumberInString(this.iconLongLan.hu100.string), h100[0].bet, 4900, true);
-						//helper.numberTo(this.iconLongLanTemp.hu100, helper.getOnlyNumberInString(this.iconLongLanTemp.hu100.string), h100[0].bet, 4900, true);
-					}
-					if (r1k - h1k[0].bet != 0) {
-						helper.numberTo(this.iconLongLan.hu1k, helper.getOnlyNumberInString(this.iconLongLan.hu1k.string), h1k[0].bet, 4900, true);
-						//helper.numberTo(this.iconLongLanTemp.hu1k, helper.getOnlyNumberInString(this.iconLongLanTemp.hu1k.string), h1k[0].bet, 4900, true);
-					}
-					if (r10k - h10k[0].bet != 0) {
-						helper.numberTo(this.iconLongLan.hu10k, helper.getOnlyNumberInString(this.iconLongLan.hu10k.string), h10k[0].bet, 4900, true);
-						//helper.numberTo(this.iconLongLanTemp.hu10k, helper.getOnlyNumberInString(this.iconLongLanTemp.hu10k.string), h10k[0].bet, 4900, true);
-					}
-				});
-		}
-	},
+			// 		if (r100 - h100[0].bet != 0) {
+			// 			helper.numberTo(this.iconLongLan.hu100, helper.getOnlyNumberInString(this.iconLongLan.hu100.string), h100[0].bet, 4900, true);
+			// 		//	helper.numberTo(this.iconLongLanTemp.hu100, helper.getOnlyNumberInString(this.iconLongLanTemp.hu100.string), h100[0].bet, 4900, true);
+			// 		}
+			// 		if (r1k - h1k[0].bet != 0) {
+			// 			helper.numberTo(this.iconLongLan.hu1k, helper.getOnlyNumberInString(this.iconLongLan.hu1k.string), h1k[0].bet, 4900, true);
+			// 		//	helper.numberTo(this.iconLongLanTemp.hu1k, helper.getOnlyNumberInString(this.iconLongLanTemp.hu1k.string), h1k[0].bet, 4900, true);
+			// 		}
+			// 		if (r10k - h10k[0].bet != 0) {
+			// 			helper.numberTo(this.iconLongLan.hu10k, helper.getOnlyNumberInString(this.iconLongLan.hu10k.string), h10k[0].bet, 4900, true);
+			// 		//	helper.numberTo(this.iconLongLanTemp.hu10k, helper.getOnlyNumberInString(this.iconLongLanTemp.hu10k.string), h10k[0].bet, 4900, true);
+			// 		}
+			// 	});
+//}
+	//},
 });

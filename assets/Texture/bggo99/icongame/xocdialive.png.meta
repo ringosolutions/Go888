@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "c8659534-8ab0-4581-be55-633b712bd1af",
+  "uuid": "bd167732-64e3-4458-ba4a-bb305e8c5952",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "xocdialive": {
       "ver": "1.0.4",
-      "uuid": "65c3915b-e3fb-44f8-9837-637426028dd7",
-      "rawTextureUuid": "c8659534-8ab0-4581-be55-633b712bd1af",
+      "uuid": "1d57fa4f-7003-4fb9-892f-79edf54b04ce",
+      "rawTextureUuid": "bd167732-64e3-4458-ba4a-bb305e8c5952",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

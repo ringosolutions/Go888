@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "7123210d-fad7-48a2-8019-0116a0143841",
+  "uuid": "ed0aff44-dbce-4ec9-97d1-1d8934d62df7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "maubinh": {
       "ver": "1.0.4",
-      "uuid": "ef945957-6553-46d3-bb79-e86a2ce25a01",
-      "rawTextureUuid": "7123210d-fad7-48a2-8019-0116a0143841",
+      "uuid": "5adbcb84-dabf-4821-b9af-e438027bf463",
+      "rawTextureUuid": "ed0aff44-dbce-4ec9-97d1-1d8934d62df7",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

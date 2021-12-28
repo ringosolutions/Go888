@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "0eb4a8d2-e8a7-477b-99ae-27d0838b8840",
+  "uuid": "c34ca153-8869-4c57-825d-b28dc0c06c99",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "livecasino": {
       "ver": "1.0.4",
-      "uuid": "d896230e-76cd-42c3-b8a1-17d19c1fe6ad",
-      "rawTextureUuid": "0eb4a8d2-e8a7-477b-99ae-27d0838b8840",
+      "uuid": "549a8ae8-d0dd-4253-b3c0-5b88f106106d",
+      "rawTextureUuid": "c34ca153-8869-4c57-825d-b28dc0c06c99",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

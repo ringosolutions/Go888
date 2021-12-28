@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "a5066750-35da-472e-8b30-2ff231231484",
+  "uuid": "4ebe2a08-6422-45e2-bf0c-715be4baf5d5",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "thantai": {
       "ver": "1.0.4",
-      "uuid": "a27b0238-6127-4bc0-a432-6f0e6983688a",
-      "rawTextureUuid": "a5066750-35da-472e-8b30-2ff231231484",
+      "uuid": "0ff3dc15-cd15-43ad-ae2a-3fbf7f0e343f",
+      "rawTextureUuid": "4ebe2a08-6422-45e2-bf0c-715be4baf5d5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

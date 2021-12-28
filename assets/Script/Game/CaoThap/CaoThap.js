@@ -89,7 +89,7 @@ cc.Class({
 		cc.RedT.setting.caothap.position = this.node.position;
 	},
 	openGame:function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		if (cc.RedT.IS_LOGIN){
 			this.node.active = !0;
 			localStorage.setItem('caothap', true);
@@ -99,7 +99,7 @@ cc.Class({
 			cc.RedT.inGame.dialog.showSignIn();
 	},
 	closeGame:function(){
-		cc.RedT.audio.playUnClick();
+	//	cc.RedT.audio.playUnClick();
 		this.node.active = !1;
 		localStorage.setItem('caothap', false);
 	},
@@ -333,7 +333,7 @@ cc.Class({
 
 				var Play = function(){
 					var huong = cc.callFunc(function(){
-						cc.RedT.audio.playEf('winHu');
+				//		cc.RedT.audio.playEf('winHu');
 						helper.numberTo(text, 0, this.nohu, 1000, true);
 					}, this);
 					nohu.node.runAction(cc.sequence(cc.delayTime(0.25), huong));

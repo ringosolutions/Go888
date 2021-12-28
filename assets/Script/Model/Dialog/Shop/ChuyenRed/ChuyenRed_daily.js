@@ -21,7 +21,7 @@ cc.Class({
 		this.FB = "https://facebook.com/" + data.fb;
 	},
 	onChuyenClick: function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		this.controll.selectDaiLy(this);
 	},
 	onFBClick: function(){

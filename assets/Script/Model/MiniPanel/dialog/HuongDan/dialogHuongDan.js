@@ -15,7 +15,7 @@ cc.Class({
         this.select(game)
     },
     select: function(game) {
-        cc.RedT.audio.playClick();
+       // cc.RedT.audio.playClick();
         var self = this;
         this.game.forEach(function(obj){
             var parent = obj.node.parent;

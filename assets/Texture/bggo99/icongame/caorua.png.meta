@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "507e85bd-b2ff-4357-8fc9-d935757f6a4a",
+  "uuid": "b59a598f-036d-4328-93a9-c705ff16e81e",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "caorua": {
       "ver": "1.0.4",
-      "uuid": "cc6af33e-79cc-4400-8391-350757437978",
-      "rawTextureUuid": "507e85bd-b2ff-4357-8fc9-d935757f6a4a",
+      "uuid": "14c79a87-908e-4bf1-ad50-b8e50cd51c40",
+      "rawTextureUuid": "b59a598f-036d-4328-93a9-c705ff16e81e",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -65,7 +65,7 @@ cc.Class({
 	},
 	onClickRoom: function(event){
 		this.bet = event.target.name;
-		cc.RedT.audio.playClick();
+		//cc.RedT.audio.playClick();
 		switch(this.game.game){
 			case 'poker':
 				cc.RedT.inGame.dialog.showPokerNap(this);

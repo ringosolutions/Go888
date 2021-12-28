@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "6e19af77-8207-42d3-adcf-cde2996ce4db",
+  "uuid": "2d60be4d-66db-4af1-9cff-a3652eb25823",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "naptien": {
       "ver": "1.0.4",
-      "uuid": "36e47d6f-e126-4a36-8881-a90428111290",
-      "rawTextureUuid": "6e19af77-8207-42d3-adcf-cde2996ce4db",
+      "uuid": "2b099e9b-9104-48d1-b743-ae4f3a993398",
+      "rawTextureUuid": "2d60be4d-66db-4af1-9cff-a3652eb25823",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "c8f0b8d6-6556-4efc-bd4d-1749b0620f5d",
+  "uuid": "3b2857a3-d3e5-4cb0-a1c0-60128b2bbba7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "trenduoi": {
       "ver": "1.0.4",
-      "uuid": "7ab248f3-2c8f-4bc8-a2c1-05446c37c0af",
-      "rawTextureUuid": "c8f0b8d6-6556-4efc-bd4d-1749b0620f5d",
+      "uuid": "9bb6b682-a2b7-4730-9865-36e564c4de4c",
+      "rawTextureUuid": "3b2857a3-d3e5-4cb0-a1c0-60128b2bbba7",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

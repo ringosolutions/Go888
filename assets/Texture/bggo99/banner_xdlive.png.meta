@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "b6c7f40d-fb7b-4528-82e5-7552ae71becd",
+  "uuid": "aa263ea1-7a9d-43c3-86a6-d680a3cff27f",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "banner_xdlive": {
       "ver": "1.0.4",
-      "uuid": "23f03e90-3a7f-404d-9656-dc77e1bf66c5",
-      "rawTextureUuid": "b6c7f40d-fb7b-4528-82e5-7552ae71becd",
+      "uuid": "68fcae5b-1967-4a86-b3fa-32636a772401",
+      "rawTextureUuid": "aa263ea1-7a9d-43c3-86a6-d680a3cff27f",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

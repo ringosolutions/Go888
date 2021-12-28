@@ -45,11 +45,11 @@ cc.Class({
 		}
 	},
 	close: function(){
-		cc.RedT.audio.playUnClick();
+	//	cc.RedT.audio.playUnClick();
 		this.node.active = false;
 	},
 	onClickButton: function(){
-		cc.RedT.audio.playClick();
+	//	cc.RedT.audio.playClick();
 		switch(this.type) {
 			case 'sign_out':
 				this.node.active = false;

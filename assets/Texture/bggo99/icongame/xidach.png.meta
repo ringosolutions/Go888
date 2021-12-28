@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "4b91277e-9efd-4b54-be7f-32adba562a0a",
+  "uuid": "21eb83c0-67a6-492c-9bd7-0cb19aaa4576",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "xidach": {
       "ver": "1.0.4",
-      "uuid": "f362e23e-e94a-409e-b347-d5cce1f71735",
-      "rawTextureUuid": "4b91277e-9efd-4b54-be7f-32adba562a0a",
+      "uuid": "4e1882b1-ed64-4447-a591-27d82e691029",
+      "rawTextureUuid": "21eb83c0-67a6-492c-9bd7-0cb19aaa4576",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

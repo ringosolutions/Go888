@@ -9,10 +9,8 @@ var signIn     = require('SignIn'),
 	Settings   = require('Settings'),
 	//the_cao    = require('TheCao'),
 	//GiftCode   = require('GiftCode'),
-	DEvent     = require('DEvent'),
-	//PokerNap   = require('PokerNap'),
-	//x2Nap   = require('x2Nap'),
-	iMessage  = require('iMessage');
+	//DEvent     = require('DEvent'),
+ 	iMessage  = require('iMessage');
 
 cc.Class({
 	extends: cc.Component,
@@ -24,14 +22,12 @@ cc.Class({
 		shop:       shop,
 		shopRut:    ShopRut,
 		profile:    profile,
-		//the_cao:    the_cao,
+	//	the_cao:    the_cao,
 		settings:   Settings,
-		//GiftCode:   GiftCode,
-		DEvent:     DEvent,
-		//PokerNap:   PokerNap,
-		iMessage:  iMessage,
-		//x2Nap:x2Nap
-	},
+	//	GiftCode:   GiftCode,
+	//	DEvent:     DEvent,
+ 		iMessage:  iMessage,
+ 	},
 	init: function() {
 		this.actionShow = cc.spawn(cc.scaleTo(0.5, 1).easing(cc.easeBackOut(2.5)), cc.fadeTo(0.5, 255));
 		this.objShow    = null;
@@ -39,13 +35,13 @@ cc.Class({
 		this.shop.init();
 		this.shopRut.init();
 		this.profile.init();
-		this.the_cao.init();
+	//	this.the_cao.init();
 	     
 		
 	},
 
 	onClickBack: function(){
-		cc.RedT.audio.playUnClick();
+		//cc.RedT.audio.playUnClick();
 		this.onBack();
 	},
 	onBack: function(){
@@ -152,35 +148,11 @@ cc.Class({
 		this.node.active = this.settings.node.active = true;
 		this.objShow     = this.settings.node;
 	},
-	//showGiftCode: function(event){
-	//	if (cc.RedT.IS_LOGIN) {
-	//		this.node.active = this.GiftCode.node.active = true;
-	//		this.objShow     = this.GiftCode.node;
-	//	}else{
-		//	this.showSignIn();
-	//	}
-	//},
-	showDEvent: function(event){
-		if (cc.RedT.IS_LOGIN) {
-			this.node.active = this.DEvent.node.active = true;
-			this.objShow     = this.DEvent.node;
-		}else{
-			this.showSignIn();
-		}
-	},
-	//showPokerNap: function(obj){
-	//	this.node.active = this.PokerNap.node.active = true;
-	//	this.objShow     = this.PokerNap.node;
-	//	this.PokerNap.init(obj);
-	//},
+	 
+	 
 	showiMessage: function(obj){
 		this.node.active = this.iMessage.node.active = true;
 		this.objShow     = this.iMessage.node;
 	},
-	showEventX2(){
-		if (cc.RedT.IS_LOGIN) {
-			this.node.active = this.x2Nap.node.active = true;
-			this.objShow     = this.x2Nap.node;
-		}
-	}
+	 
 });

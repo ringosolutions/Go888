@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "84c2649e-5ba9-4521-87eb-0e42b360e829",
+  "uuid": "4a942e9b-550a-47e9-8a8f-3a1ee4fdb8a8",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "sicbo": {
       "ver": "1.0.4",
-      "uuid": "0a61d162-6b12-4796-903f-fa780148be45",
-      "rawTextureUuid": "84c2649e-5ba9-4521-87eb-0e42b360e829",
+      "uuid": "b86e59d9-9fed-468e-8e58-669fbd48a8f3",
+      "rawTextureUuid": "4a942e9b-550a-47e9-8a8f-3a1ee4fdb8a8",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

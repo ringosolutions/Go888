@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "a64dfeae-430d-4b32-adad-fe3423986078",
+  "uuid": "788bb911-23fe-46e4-87c6-64327603f83a",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "taiapp": {
       "ver": "1.0.4",
-      "uuid": "00f3b11a-e901-4fc4-8f3a-5348c86bdc2e",
-      "rawTextureUuid": "a64dfeae-430d-4b32-adad-fe3423986078",
+      "uuid": "f101f177-ce49-4f20-b1f7-42450ff286f2",
+      "rawTextureUuid": "788bb911-23fe-46e4-87c6-64327603f83a",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
